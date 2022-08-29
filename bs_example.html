@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="js/default/jquery-2.1.4.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/default/bootstrap.min.js"></script>
+        <script src="js/kzl-tools.js"></script>
+
+         <title>日記帳</title>
+        <link rel="stylesheet" href="css/main.css" type="text/css" media="all">
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>日記帳</h1>
+            <form>
+            
+                <div class="row">
+                    <div class="col-sm-4">
+                        タイトル：
+                        <input type="text" name="dialyTitle" id="dialyTitle" placeholder="タイトルを入れてください" class="form-control" >
+                        日　　付：
+                        <input type="text" name="dialyDate" id="dialyDate" class="form-control" >
+                        <br>
+                        <textarea rows="5" cols="30" name="dialyContents" id="dialyContents" placeholder="メモしたい内容を入れてください" class="form-control" ></textarea>
+                    </div>
+                </div>
+                <br>
+                <input type="button" id="saveButton" class="btn btn-success"value="保存する">
+                <input type="button" id="deleteButton" class="btn btn-danger"value="削除">
+                        
+            </form>
+            <br>
+            <div id="status"></div>
+            <div id="list">日記リストを読み込んでいます...</div>
+        </div>
+    </body>
+</html>
